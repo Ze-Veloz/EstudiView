@@ -1,0 +1,109 @@
+:root {
+    --amarelo: #ffe600;
+    --cinza: #141414;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* base */
+
+body {
+    background: var(--cinza);
+    font-family: Helvetica;
+    color: #fff;
+}
+
+header .container {
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--amarelo);
+    font-family: 'Arial Black';
+    font-size: 44px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff48e;
+}
+
+/* Documentário principal */
+
+.documentario {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0, 0, 0, 0.55)100%), url('/img/FVT2JXOZENA7XNWVVQBAZ52AWI.jpg');
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.documentario .descricao {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.documentario .titulo {
+    margin-top: 19%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS';
+}
+
+.botao {
+    background-color: rgba(0, 0, 0,.85);
+    border: none;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background-color: #fff48e;
+    color: var(--cinza);
+}
+
+.botao i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.documentario .container {
+    width: 65%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes {
+    margin-top: 8px;
+}
